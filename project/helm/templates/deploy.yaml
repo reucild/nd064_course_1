@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: techtrends
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        image: reucild/{{ .Values.image.repository }}:{{ .Values.image.tag }}
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu }}
